@@ -2,13 +2,13 @@
 
    pragma solidity ^0.8.24;
 
-   contract PrimeNumber {
-     function ifPrime (int num) public pure returns {
-       if(num ==1)return false;
-       for(int 1 = 2; i < num; i++){
-       if (num % i == 0)
-             return false;
-            }
-            return true;
-            }
-        }
+contract PrimeNumber {
+         function findPrime (int num)public pure returns (bool){
+                  if (num <= 1) return false;
+                    for(int i = 2 ; i < num; i++) {
+                        if (num % i == 0) 
+                            return false;
+                              }
+                  return true; 
+                     }
+               }
