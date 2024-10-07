@@ -1,11 +1,14 @@
 //SPDX-License-Identifier: GPL-3.0
 
-pragma solidity
+pragma solidity ^0.8.24;
 
     contract EvenNumber {
-              function findEven(int numb) public pure returns (bool){
+              function findEven(int num) public pure returns (bool) {
                   if (num < 2) return false;
-                      for(i = 2; i <= num; ) {
-                        if (num % 2) return true;
+
+                        if (num % 2 == 0){
+                         return true;
+                        } else {
+                    return false;
                         }
                       }
