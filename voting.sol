@@ -26,5 +26,5 @@ pragma solidity ^0.8.24;
 proposal [] public proposals;
 
 //create a new ballot to choose one of the 'ProposalNames'
-      constructo
+      constructor (bytes32[] memory proposalNames
       
