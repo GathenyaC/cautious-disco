@@ -26,5 +26,7 @@ pragma solidity ^0.8.24;
 proposal [] public proposals;
 
 //create a new ballot to choose one of the 'ProposalNames'
-      constructor (bytes32[] memory proposalNames
+      constructor (bytes32[] memory proposalNames) {
+          chairperson = msg.sender;
+          voters[chairperson].weight = 1;
       
